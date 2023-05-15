@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+}
+
+.tools {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.canvas-container {
+  display: flex;
+  gap: 8px;
+}
+
+.mode-indicator {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#color {
+  border: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}

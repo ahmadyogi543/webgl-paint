@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEBGL PAINT</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>WEBGL PAINT</h2>
+        <ul class="tools">
+          <li class="tool">
+            <button id="titik" class="btn btn-tool">TITIK</button>
+          </li>
+          <li class="tool">
+            <button id="garis-dda" class="btn btn-tool">GARIS DDA</button>
+          </li>
+          <li class="tool">
+            <button id="garis" class="btn btn-tool">GARIS</button>
+          </li>
+          <li class="tool">
+            <button id="segitiga" class="btn btn-tool">SEGITIGA</button>
+          </li>
+          <li class="tool" style="margin-left: auto">
+            <button id="hapus" class="btn btn-tool">CLEAR</button>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div class="canvas-container">
+          <canvas id="canvas" width="400" height="400"></canvas>
+          <input type="color" id="color" value="#ff0000" />
+        </div>
+        <p class="mode-indicator">mode aktif: <u id="mode"></u></p>
+      </main>
+    </div>
+  </body>
+</html>
